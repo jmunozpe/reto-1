@@ -2,7 +2,8 @@
 
 Crear una función que realice operaciones básicas (suma, resta, multiplicación, división) entre dos números, según la elección del usuario, la forma de entrada de la función será los dos operandos y el caracter usado para la operación. entrada: (1,2,"+"), salida (3).
 
-
+# codigo
+```
 def operar(a, b, op):
     if op not in ["+", "-", "*", "/"]:
         raise ValueError("Operación incorrecta. Usa +, -, * o /.")
@@ -26,3 +27,4 @@ if __name__ == "__main__":
         print("Resultado:", operar(a, b, op))
     except ValueError as e:
         print("Error:", e)
+```
